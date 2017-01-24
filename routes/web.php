@@ -16,7 +16,14 @@ Route::get('/', function () {
 });
 Route::get('/help', function () {
     return view('static_pages/help');
-});
+})->name('help');
 Route::get('/about', function () {
     return view('static_pages/about');
-});
+})->name('about');
+
+/* sign up page*/
+Route::get('/signup', function() {
+    return view('users/signup');
+})->name('signup');
+
+

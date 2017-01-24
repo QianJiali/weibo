@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('static_pages/home');
+});
+Route::get('/help', function () {
+    return view('static_pages/help');
+});
+Route::get('/about', function () {
+    return view('static_pages/about');
 });

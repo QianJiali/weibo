@@ -26,4 +26,4 @@ Route::get('/signup', function() {
     return view('users/signup');
 })->name('signup');
 
-
+Route::resource('users', 'UsersController');
